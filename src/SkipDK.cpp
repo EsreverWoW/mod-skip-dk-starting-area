@@ -126,10 +126,20 @@ public:
                     player->AddQuest(sObjectMgr->GetQuestTemplate(12706), nullptr);
                     player->RewardQuest(sObjectMgr->GetQuestTemplate(12706), false, player);
                 }
+                if (player->GetQuestStatus(12716) == QUEST_STATUS_NONE)//The Plaguebringer's Request
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12716), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12716), false, player);
+                }
                 if (player->GetQuestStatus(12719) == QUEST_STATUS_NONE)//Nowhere To Run And Nowhere To Hide
                 {
                     player->AddQuest(sObjectMgr->GetQuestTemplate(12719), nullptr);
                     player->RewardQuest(sObjectMgr->GetQuestTemplate(12719), false, player);
+                }
+                if (player->GetQuestStatus(12722) == QUEST_STATUS_NONE)//Lambs To The Slaughter
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12722), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12722), false, player);
                 }
                 if (player->GetQuestStatus(12720) == QUEST_STATUS_NONE)//How To Win Friends And Influence Enemies
                 {
@@ -269,10 +279,20 @@ public:
                     player->AddQuest(sObjectMgr->GetQuestTemplate(12706), nullptr);
                     player->RewardQuest(sObjectMgr->GetQuestTemplate(12706), false, player);
                 }
+                if (player->GetQuestStatus(12716) == QUEST_STATUS_NONE)//The Plaguebringer's Request
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12716), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12716), false, player);
+                }
                 if (player->GetQuestStatus(12719) == QUEST_STATUS_NONE)//Nowhere To Run And Nowhere To Hide
                 {
                     player->AddQuest(sObjectMgr->GetQuestTemplate(12719), nullptr);
                     player->RewardQuest(sObjectMgr->GetQuestTemplate(12719), false, player);
+                }
+                if (player->GetQuestStatus(12722) == QUEST_STATUS_NONE)//Lambs To The Slaughter
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12722), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12722), false, player);
                 }
                 if (player->GetQuestStatus(12720) == QUEST_STATUS_NONE)//How To Win Friends And Influence Enemies
                 {
@@ -473,10 +493,20 @@ public:
                     player->AddQuest(sObjectMgr->GetQuestTemplate(12706), nullptr);
                     player->RewardQuest(sObjectMgr->GetQuestTemplate(12706), false, player);
                 }
+                if (player->GetQuestStatus(12716) == QUEST_STATUS_NONE)//The Plaguebringer's Request
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12716), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12716), false, player);
+                }
                 if (player->GetQuestStatus(12719) == QUEST_STATUS_NONE)//Nowhere To Run And Nowhere To Hide
                 {
                     player->AddQuest(sObjectMgr->GetQuestTemplate(12719), nullptr);
                     player->RewardQuest(sObjectMgr->GetQuestTemplate(12719), false, player);
+                }
+                if (player->GetQuestStatus(12722) == QUEST_STATUS_NONE)//Lambs To The Slaughter
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12722), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12722), false, player);
                 }
                 if (player->GetQuestStatus(12720) == QUEST_STATUS_NONE)//How To Win Friends And Influence Enemies
                 {
