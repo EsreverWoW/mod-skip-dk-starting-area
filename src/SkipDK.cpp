@@ -77,9 +77,7 @@ public:
                 player->learnSpell(53441);//runeforging
                 player->learnSpell(53344);//runeforging
                 player->learnSpell(62158);//runeforging
-                player->learnSpell(33391);//journeyman riding
                 player->learnSpell(54586);//runeforging credit
-                player->learnSpell(48778);//acherus deathcharger
                 player->learnSkillRewardedSpells(776, 375);//Runeforging
                 player->learnSkillRewardedSpells(960, 375);//Runeforging
 
@@ -87,6 +85,111 @@ public:
                 {
                     player->AddQuest(sObjectMgr->GetQuestTemplate(12657), nullptr);
                     player->RewardQuest(sObjectMgr->GetQuestTemplate(12657), false, player);
+                }
+                if (player->GetQuestStatus(12678) == QUEST_STATUS_NONE)//If Chaos Drives, Let Suffering Hold The Reins
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12678), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12678), false, player);
+                }
+                if (player->GetQuestStatus(12679) == QUEST_STATUS_NONE)//Tonight We Dine In Havenshire
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12679), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12679), false, player);
+                }
+                if (player->GetQuestStatus(12680) == QUEST_STATUS_NONE)//Grand Theft Palomino
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12680), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12680), false, player);
+                }
+                if (player->GetQuestStatus(12687) == QUEST_STATUS_NONE)//Into the Realm of Shadows
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12687), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12687), false, player);
+                }
+                if (player->GetQuestStatus(12733) == QUEST_STATUS_NONE)//Death's Challenge
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12733), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12733), false, player);
+                }
+                if (player->GetQuestStatus(12698) == QUEST_STATUS_NONE)//The Gift That Keeps On Giving
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12698), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12698), false, player);
+                }
+                if (player->GetQuestStatus(12701) == QUEST_STATUS_NONE)//Massacre At Light's Point
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12701), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12701), false, player);
+                }
+                if (player->GetQuestStatus(12706) == QUEST_STATUS_NONE)//Victory At Death's Breach!
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12706), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12706), false, player);
+                }
+                if (player->GetQuestStatus(12719) == QUEST_STATUS_NONE)//Nowhere To Run And Nowhere To Hide
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12719), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12719), false, player);
+                }
+                if (player->GetQuestStatus(12720) == QUEST_STATUS_NONE)//How To Win Friends And Influence Enemies
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12720), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12720), false, player);
+                }
+                if (player->GetQuestStatus(12724) == QUEST_STATUS_NONE)//The Path Of The Righteous Crusader
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12724), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12724), false, player);
+                }
+                if (player->GetQuestStatus(12725) == QUEST_STATUS_NONE)//Brothers In Death
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12725), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12725), false, player);
+                }
+                if (player->GetQuestStatus(12727) == QUEST_STATUS_NONE)//Bloody Breakout
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12727), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12727), false, player);
+                }
+                if (player->GetTeamId() == TEAM_ALLIANCE && player->GetQuestStatus(12742) == QUEST_STATUS_NONE)//A Special Surprise
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12742), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12742), false, player);
+                }
+                else if (player->GetTeamId() == TEAM_HORDE && player->GetQuestStatus(12748) == QUEST_STATUS_NONE)//A Special Surprise
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12748), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12748), false, player);
+                }
+                if (player->GetQuestStatus(12751) == QUEST_STATUS_NONE)//A Sort Of Homecoming
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12751), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12751), false, player);
+                }
+                if (player->GetQuestStatus(12754) == QUEST_STATUS_NONE)//Ambush At The Overlook
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12754), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12754), false, player);
+                }
+                if (player->GetQuestStatus(12755) == QUEST_STATUS_NONE)//A Meeting With Fate
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12755), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12755), false, player);
+                }
+                if (player->GetQuestStatus(12756) == QUEST_STATUS_NONE)//The Scarlet Onslaught Emerges
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12756), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12756), false, player);
+                }
+                if (player->GetQuestStatus(12757) == QUEST_STATUS_NONE)//Scarlet Armies Approach...
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12757), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12757), false, player);
+                }
+                if (player->GetQuestStatus(12779) == QUEST_STATUS_NONE)//An End To All Things...
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12779), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12779), false, player);
                 }
                 if (player->GetQuestStatus(12801) == QUEST_STATUS_NONE)//The Light of Dawn
                 {
@@ -98,7 +201,7 @@ public:
                     player->AddQuest(sObjectMgr->GetQuestTemplate(13188), nullptr);
                     player->RewardQuest(sObjectMgr->GetQuestTemplate(13188), false, player);
                 }
-                else if (player->GetTeamId() == TEAM_HORDE && player->GetQuestStatus(13189) == QUEST_STATUS_NONE)//Saurfang's Blessing
+                else if (player->GetTeamId() == TEAM_HORDE && player->GetQuestStatus(13189) == QUEST_STATUS_NONE)//Warchief's Blessing
                 {
                     player->AddQuest(sObjectMgr->GetQuestTemplate(13189), nullptr);
                     player->RewardQuest(sObjectMgr->GetQuestTemplate(13189), false, player);
@@ -117,9 +220,7 @@ public:
                 player->learnSpell(53441);//runeforging
                 player->learnSpell(53344);//runeforging
                 player->learnSpell(62158);//runeforging
-                player->learnSpell(33391);//journeyman riding
                 player->learnSpell(54586);//runeforging credit
-                player->learnSpell(48778);//acherus deathcharger
                 player->learnSkillRewardedSpells(776, 375);//Runeforging
                 player->learnSkillRewardedSpells(960, 375);//Runeforging
 
@@ -127,6 +228,111 @@ public:
                 {
                     player->AddQuest(sObjectMgr->GetQuestTemplate(12657), nullptr);
                     player->RewardQuest(sObjectMgr->GetQuestTemplate(12657), false, player);
+                }
+                if (player->GetQuestStatus(12678) == QUEST_STATUS_NONE)//If Chaos Drives, Let Suffering Hold The Reins
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12678), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12678), false, player);
+                }
+                if (player->GetQuestStatus(12679) == QUEST_STATUS_NONE)//Tonight We Dine In Havenshire
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12679), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12679), false, player);
+                }
+                if (player->GetQuestStatus(12680) == QUEST_STATUS_NONE)//Grand Theft Palomino
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12680), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12680), false, player);
+                }
+                if (player->GetQuestStatus(12687) == QUEST_STATUS_NONE)//Into the Realm of Shadows
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12687), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12687), false, player);
+                }
+                if (player->GetQuestStatus(12733) == QUEST_STATUS_NONE)//Death's Challenge
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12733), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12733), false, player);
+                }
+                if (player->GetQuestStatus(12698) == QUEST_STATUS_NONE)//The Gift That Keeps On Giving
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12698), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12698), false, player);
+                }
+                if (player->GetQuestStatus(12701) == QUEST_STATUS_NONE)//Massacre At Light's Point
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12701), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12701), false, player);
+                }
+                if (player->GetQuestStatus(12706) == QUEST_STATUS_NONE)//Victory At Death's Breach!
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12706), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12706), false, player);
+                }
+                if (player->GetQuestStatus(12719) == QUEST_STATUS_NONE)//Nowhere To Run And Nowhere To Hide
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12719), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12719), false, player);
+                }
+                if (player->GetQuestStatus(12720) == QUEST_STATUS_NONE)//How To Win Friends And Influence Enemies
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12720), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12720), false, player);
+                }
+                if (player->GetQuestStatus(12724) == QUEST_STATUS_NONE)//The Path Of The Righteous Crusader
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12724), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12724), false, player);
+                }
+                if (player->GetQuestStatus(12725) == QUEST_STATUS_NONE)//Brothers In Death
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12725), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12725), false, player);
+                }
+                if (player->GetQuestStatus(12727) == QUEST_STATUS_NONE)//Bloody Breakout
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12727), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12727), false, player);
+                }
+                if (player->GetTeamId() == TEAM_ALLIANCE && player->GetQuestStatus(12742) == QUEST_STATUS_NONE)//A Special Surprise
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12742), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12742), false, player);
+                }
+                else if (player->GetTeamId() == TEAM_HORDE && player->GetQuestStatus(12748) == QUEST_STATUS_NONE)//A Special Surprise
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12748), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12748), false, player);
+                }
+                if (player->GetQuestStatus(12751) == QUEST_STATUS_NONE)//A Sort Of Homecoming
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12751), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12751), false, player);
+                }
+                if (player->GetQuestStatus(12754) == QUEST_STATUS_NONE)//Ambush At The Overlook
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12754), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12754), false, player);
+                }
+                if (player->GetQuestStatus(12755) == QUEST_STATUS_NONE)//A Meeting With Fate
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12755), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12755), false, player);
+                }
+                if (player->GetQuestStatus(12756) == QUEST_STATUS_NONE)//The Scarlet Onslaught Emerges
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12756), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12756), false, player);
+                }
+                if (player->GetQuestStatus(12757) == QUEST_STATUS_NONE)//Scarlet Armies Approach...
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12757), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12757), false, player);
+                }
+                if (player->GetQuestStatus(12779) == QUEST_STATUS_NONE)//An End To All Things...
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12779), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12779), false, player);
                 }
                 if (player->GetQuestStatus(12801) == QUEST_STATUS_NONE)//The Light of Dawn
                 {
@@ -138,7 +344,7 @@ public:
                     player->AddQuest(sObjectMgr->GetQuestTemplate(13188), nullptr);
                     player->RewardQuest(sObjectMgr->GetQuestTemplate(13188), false, player);
                 }
-                else if (player->GetTeamId() == TEAM_HORDE && player->GetQuestStatus(13189) == QUEST_STATUS_NONE)//Saurfang's Blessing
+                else if (player->GetTeamId() == TEAM_HORDE && player->GetQuestStatus(13189) == QUEST_STATUS_NONE)//Warchief's Blessing
                 {
                     player->AddQuest(sObjectMgr->GetQuestTemplate(13189), nullptr);
                     player->RewardQuest(sObjectMgr->GetQuestTemplate(13189), false, player);
@@ -218,9 +424,7 @@ public:
                 player->learnSpell(53441, false);//runeforging
                 player->learnSpell(53344, false);//runeforging
                 player->learnSpell(62158, false);//runeforging
-                player->learnSpell(33391, false);//journeyman riding
                 player->learnSpell(54586, false);//runeforging credit
-                player->learnSpell(48778, false);//acherus deathcharger
                 player->learnSkillRewardedSpells(776, 375);//Runeforging
                 player->learnSkillRewardedSpells(960, 375);//Runeforging
 
@@ -228,6 +432,111 @@ public:
                 {
                     player->AddQuest(sObjectMgr->GetQuestTemplate(12657), nullptr);
                     player->RewardQuest(sObjectMgr->GetQuestTemplate(12657), false, player);
+                }
+                if (player->GetQuestStatus(12678) == QUEST_STATUS_NONE)//If Chaos Drives, Let Suffering Hold The Reins
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12678), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12678), false, player);
+                }
+                if (player->GetQuestStatus(12679) == QUEST_STATUS_NONE)//Tonight We Dine In Havenshire
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12679), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12679), false, player);
+                }
+                if (player->GetQuestStatus(12680) == QUEST_STATUS_NONE)//Grand Theft Palomino
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12680), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12680), false, player);
+                }
+                if (player->GetQuestStatus(12687) == QUEST_STATUS_NONE)//Into the Realm of Shadows
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12687), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12687), false, player);
+                }
+                if (player->GetQuestStatus(12733) == QUEST_STATUS_NONE)//Death's Challenge
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12733), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12733), false, player);
+                }
+                if (player->GetQuestStatus(12698) == QUEST_STATUS_NONE)//The Gift That Keeps On Giving
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12698), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12698), false, player);
+                }
+                if (player->GetQuestStatus(12701) == QUEST_STATUS_NONE)//Massacre At Light's Point
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12701), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12701), false, player);
+                }
+                if (player->GetQuestStatus(12706) == QUEST_STATUS_NONE)//Victory At Death's Breach!
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12706), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12706), false, player);
+                }
+                if (player->GetQuestStatus(12719) == QUEST_STATUS_NONE)//Nowhere To Run And Nowhere To Hide
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12719), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12719), false, player);
+                }
+                if (player->GetQuestStatus(12720) == QUEST_STATUS_NONE)//How To Win Friends And Influence Enemies
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12720), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12720), false, player);
+                }
+                if (player->GetQuestStatus(12724) == QUEST_STATUS_NONE)//The Path Of The Righteous Crusader
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12724), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12724), false, player);
+                }
+                if (player->GetQuestStatus(12725) == QUEST_STATUS_NONE)//Brothers In Death
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12725), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12725), false, player);
+                }
+                if (player->GetQuestStatus(12727) == QUEST_STATUS_NONE)//Bloody Breakout
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12727), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12727), false, player);
+                }
+                if (player->GetTeamId() == TEAM_ALLIANCE && player->GetQuestStatus(12742) == QUEST_STATUS_NONE)//A Special Surprise
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12742), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12742), false, player);
+                }
+                else if (player->GetTeamId() == TEAM_HORDE && player->GetQuestStatus(12748) == QUEST_STATUS_NONE)//A Special Surprise
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12748), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12748), false, player);
+                }
+                if (player->GetQuestStatus(12751) == QUEST_STATUS_NONE)//A Sort Of Homecoming
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12751), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12751), false, player);
+                }
+                if (player->GetQuestStatus(12754) == QUEST_STATUS_NONE)//Ambush At The Overlook
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12754), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12754), false, player);
+                }
+                if (player->GetQuestStatus(12755) == QUEST_STATUS_NONE)//A Meeting With Fate
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12755), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12755), false, player);
+                }
+                if (player->GetQuestStatus(12756) == QUEST_STATUS_NONE)//The Scarlet Onslaught Emerges
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12756), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12756), false, player);
+                }
+                if (player->GetQuestStatus(12757) == QUEST_STATUS_NONE)//Scarlet Armies Approach...
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12757), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12757), false, player);
+                }
+                if (player->GetQuestStatus(12779) == QUEST_STATUS_NONE)//An End To All Things...
+                {
+                    player->AddQuest(sObjectMgr->GetQuestTemplate(12779), nullptr);
+                    player->RewardQuest(sObjectMgr->GetQuestTemplate(12779), false, player);
                 }
                 if (player->GetQuestStatus(12801) == QUEST_STATUS_NONE)//The Light of Dawn
                 {
@@ -239,7 +548,7 @@ public:
                     player->AddQuest(sObjectMgr->GetQuestTemplate(13188), nullptr);
                     player->RewardQuest(sObjectMgr->GetQuestTemplate(13188), false, player);
                 }
-                else if (player->GetTeamId() == TEAM_HORDE && player->GetQuestStatus(13189) == QUEST_STATUS_NONE)//Saurfang's Blessing
+                else if (player->GetTeamId() == TEAM_HORDE && player->GetQuestStatus(13189) == QUEST_STATUS_NONE)//Warchief's Blessing
                 {
                     player->AddQuest(sObjectMgr->GetQuestTemplate(13189), nullptr);
                     player->RewardQuest(sObjectMgr->GetQuestTemplate(13189), false, player);
